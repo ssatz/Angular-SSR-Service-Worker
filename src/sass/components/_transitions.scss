@@ -1,0 +1,21 @@
+/*!
+ *  Copyright (C) Paisaclub.com - All Rights Reserved
+ *  * Unauthorized copying of this file, via any medium is strictly prohibited
+ *  * Proprietary and confidential
+ *  * Written by Sathish Kumar(satz) <sathish.thi@gmail.com>
+ *
+ */
+
+// Scale transition
+.scale-transition {
+  &.scale-out {
+    transform: scale(0);
+    transition: transform .2s !important;
+  }
+
+  &.scale-in {
+    transform: scale(1);
+  }
+
+  transition: transform .3s cubic-bezier(0.53, 0.01, 0.36, 1.63) !important;
+}

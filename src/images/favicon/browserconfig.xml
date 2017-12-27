@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /* Copyright (C) Paisaclub.com - All Rights Reserved
+  ~  * Unauthorized copying of this file, via any medium is strictly prohibited
+  ~  * Proprietary and confidential
+  ~  * Written by Sathish Kumar(satz) <sathish.thi@gmail.com>
+  ~  */
+  -->
+
+<browserconfig>
+    <msapplication>
+        <tile>
+            <square150x150logo src="/mstile-150x150.png"/>
+            <TileColor>#c9d2e0</TileColor>
+        </tile>
+    </msapplication>
+</browserconfig>

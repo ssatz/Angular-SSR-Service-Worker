@@ -1,0 +1,902 @@
+/*!
+ *  Copyright (C) Paisaclub.com - All Rights Reserved
+ *  * Unauthorized copying of this file, via any medium is strictly prohibited
+ *  * Proprietary and confidential
+ *  * Written by Sathish Kumar(satz) <sathish.thi@gmail.com>
+ *
+ */
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+nav ul a:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+nav {
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1) !important;
+}
+
+input.header-search-input {
+  width: 89% !important;
+}
+
+.div-home-transparent {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  padding: 15px;
+  margin-top: -180px;
+}
+
+.paisaclub-color {
+  background-color: #4FD2C2;
+}
+
+.side-nav-fix {
+  left: 0px;
+}
+
+.bg-color-dark-turquoise {
+  background-color: darkturquoise !important;
+}
+
+.bg-color-light-seagreen {
+  background-color: lightseagreen !important;
+}
+
+.bg-color-light-coral {
+  background-color: lightcoral !important;
+}
+
+.bg-color-teal-accent4 {
+  background-color: #00bfa5 !important;
+}
+
+.bg-color-teal-darken3 {
+  background-color: #009688 !important;
+}
+
+.bg-color-white {
+  background-color: white !important;
+}
+
+.bg-color-lightgray {
+  background-color: lightgray !important;
+}
+
+.no-padding {
+  padding: 0px !important;
+}
+
+.no-margin {
+  margin: 0px !important;
+}
+
+.padding-20 {
+  padding: 20px !important;
+}
+
+.padding-0 {
+  padding: 0px !important;
+}
+
+.cashback-image-size {
+  width: 100px !important;
+  height: 50px !important;
+}
+
+.offer-image-responsive {
+  width: 150px !important;
+  height: 60px !important;
+}
+
+.margin-top-bottom-10 {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+
+.search-container {
+  width: 100% !important;
+  margin-top: -1px !important;
+}
+
+header-popup-box {
+  overflow: hidden;
+  font-size: 14px;
+  font-family: montserrat-light;
+}
+
+/* Shared */
+.loginBtn {
+  box-sizing: border-box;
+  position: relative;
+  /* width: 13em;  - apply for fixed size */
+  margin: 0.2em;
+  padding: 0 15px 0 46px;
+  border: none;
+  text-align: left;
+  line-height: 34px;
+  white-space: nowrap;
+  border-radius: 0.2em;
+  font-size: 13px !important;
+  color: #FFF;
+}
+
+.loginBtn:before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 34px;
+  height: 100%;
+}
+
+.loginBtn:focus {
+  outline: none;
+}
+
+.loginBtn:active {
+  box-shadow: inset 0 0 0 32px rgba(0, 0, 0, 0.1);
+}
+
+/* Facebook */
+.loginBtn--facebook {
+  background-color: #4C69BA !important;
+  background-image: linear-gradient(#4C69BA, #3B55A0) !important;
+  text-shadow: 0 -1px 0 #354C8C !important;
+  width: 72% !important;;
+}
+
+.loginBtn--facebook:before {
+  border-right: #364e92 1px solid !important;
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/14082/icon_facebook.png') 6px 6px no-repeat !important;;
+}
+
+.loginBtn--facebook:hover,
+.loginBtn--facebook:focus {
+  background-color: #5B7BD5 !important;
+  background-image: linear-gradient(#5B7BD5, #4864B1) !important;
+}
+
+/* Google */
+.loginBtn--google {
+  background: #DD4B39 !important;
+  width: 72% !important;;
+}
+
+.loginBtn--google:before {
+  border-right: #BB3F30 1px solid !important;;
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/14082/icon_google.png') 6px 6px no-repeat !important;
+}
+
+.loginBtn--google:hover,
+.loginBtn--google:focus {
+  background: #E74B37 !important;
+}
+
+@media (max-width: 600px) {
+  .search-input-field {
+    top: 0px;
+    height: 55px;
+  }
+  .close-search {
+    right: 8.5px;
+    top: 0px !important;
+    position: absolute;
+    color: rgba(0, 0, 0, .6) !important;
+  }
+
+  #search {
+    color: rgba(0, 0, 0, .6) !important;
+  }
+
+  .pagination li a {
+    padding: 0px 6px !important;
+  }
+}
+
+.search-offer-mobile {
+  background-color: snow !important;
+  color: rgba(0, 0, 0, .6) !important;
+}
+
+.row-card-transactions {
+  background-color: white !important;
+  margin-bottom: 0px !important;
+}
+
+@font-face {
+  font-family: 'rupee';
+  src: url('../font/rupee/Rupee_Foradian.ttf');
+  src: local('Ã¢ËœÂº'), url(data:font/truetype;charset=utf-8;base64,AAEAAAANAIAAAwBQRkZUTVen5G0AAADcAAAAHEdERUYAQAAEAAAA+AAAACBPUy8yRQixzQAAARgAAABgY21hcGmyCE0AAAF4AAABamdhc3D//wADAAAC5AAAAAhnbHlmmuFTtAAAAuwAABAoaGVhZPOmAG0AABMUAAAANmhoZWELSAQOAAATTAAAACRobXR4KSwAAAAAE3AAAABMbG9jYUCgSLQAABO8AAAAKG1heHAAFQP+AAAT5AAAACBuYW1lWObwcQAAFAQAAAIDcG9zdCuGzNQAABYIAAAAuAAAAAEAAAAAxtQumQAAAADIadrpAAAAAMhp2uoAAQAAAA4AAAAYAAAAAAACAAEAAQASAAEABAAAAAIAAAADAigBkAAFAAgFmgUzAAABGwWaBTMAAAPRAGYCEgAAAgAFAAAAAAAAAIAAAKdQAABKAAAAAAAAAABITCAgAEAAICBfBZr+ZgDNBrQBoiAAARFBAAAAAAAFnAAAACAAAQAAAAMAAAADAAAAHAABAAAAAABkAAMAAQAAABwABABIAAAADgAIAAIABgAgAFIAoCAKIC8gX///AAAAIABSAKAgACAvIF/////j/7L/ZeAG3+LfswABAAAAAAAAAAAAAAAAAAAAAAEGAAABAAAAAAAAAAECAAAAAgAAAAAAAAAAAAAAAAAAAAEAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB//8AAgABAAAAAAO0BZwD/QAAATMVMzUhFTMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVIxUjNSMVIzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNSE1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1ITUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNSECTBAYATwEBAQEBAQEBAQEBAQEBAQEBAQEBAQQ2AQEBAQEBAQEBAQEBAQEBAT0BAQEBAQEBAQEBAQEBAQEBAQEBAQECJwEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAgEBAQECAQECAQIBAgECAgECAwICAgMCAwMEAwQFBAcHBAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBIAcMAwEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEsCAcEBAMDAwICAgICAgECAQIBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAT9/AQEBAQEBAQEBAQEBAQEBAQEBAQECAGYBAQEBAQEBAQEBAQEBAgECAQIBAwICAwIEBAYFCjwBAQEBAQEBAQEBAQEBAQEBAQEBAQECAH0BZwEBAQIBAgIBAgECAQIBAgIBAgECAQIBAQEDAgECAQIBAgECAwICAwQEAQEBAgECAQICAQIBAgECAgECAQICAQEBAgQEBAMDAgIDAQICAQICAQEBAgEBAgEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBBAECAQEBAgEBAgEBAQECAQECAQEBAgEBAQIBAQIBAQEBAQIBAgEBAgEBAQIBAQECAQEBAgEBAQIBAQEBAQIBAQIBAQECAQEBAgEBAgEBAQEBAgEBAgEBAgEBAQEBAgEBAgEBAQECAQECAQEBAgEBAQECAQECAQECAQEBAQIBAQEBAgEBAQEBAQECAQEBAQIBAQECAQEBAgEBAQIBAQECAQECAQEBAgECAQEBAgEBAQIBAQIBAQEBAgEBAgEBAgEBAQECAQECAQEBAQIBAQECAQECAQEBAQIBAQIBAQEBAQIBAQECAQEBAgEBAgEBAQEBAQIBAQECAQEBAQIBAQECAQEBAQEBAgIeAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQECAQECAQICAgIDAwIHBQMCAQICAQIBAgECAQICAQIBAgEBAQEDAgIBAgEBAgEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAgECAQIBAgECAQIBAgECAQICAQEBAQAAAAAAQAAAAADtAWcA/0AAAEzFTM1IRUzFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFSMVIzUjFSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUhNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNSE1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUhAkwQGAE8BAQEBAQEBAQEBAQEBAQEBAQEBAQEENgEBAQEBAQEBAQEBAQEBAQE9AQEBAQEBAQEBAQEBAQEBAQEBAQEBAicBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQIBAQEBAgEBAgECAQIBAgIBAgMCAgIDAgMDBAMEBQQHBwQBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBASAHDAMBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBLAgHBAQDAwMCAgICAgIBAgECAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE/fwEBAQEBAQEBAQEBAQEBAQEBAQEBAgBmAQEBAQEBAQEBAQEBAQIBAgECAQMCAgMCBAQGBQo8AQEBAQEBAQEBAQEBAQEBAQEBAQEBAgB9AWcBAQECAQICAQIBAgECAQICAQIBAgECAQEBAwIBAgECAQIBAgMCAgMEBAEBAQIBAgECAgECAQIBAgIBAgECAgEBAQIEBAQDAwICAwECAgECAgEBAQIBAQIBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQQBAgEBAQIBAQIBAQEBAgEBAgEBAQIBAQECAQECAQEBAQECAQIBAQIBAQECAQEBAgEBAQIBAQECAQEBAQECAQECAQEBAgEBAQIBAQIBAQEBAQIBAQIBAQIBAQEBAQIBAQIBAQEBAgEBAgEBAQIBAQEBAgEBAgEBAgEBAQECAQEBAQIBAQEBAQEBAgEBAQECAQEBAgEBAQIBAQECAQEBAgEBAgEBAQIBAgEBAQIBAQECAQECAQEBAQIBAQIBAQIBAQEBAgEBAgEBAQECAQEBAgEBAgEBAQECAQECAQEBAQECAQEBAgEBAQIBAQIBAQEBAQECAQEBAgEBAQECAQEBAgEBAQEBAQICHgEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAgEBAgECAgICAwMCBwUDAgECAgECAQIBAgECAgECAQIBAQEBAwICAQIBAQIBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQIBAgECAQIBAgECAQIBAgECAgEBAQEAAAAAAEAAAABAACTKPMBXw889QALCAAAAAAAyGna6gAAAADIadrqAAAAAAO0BZwAAAAIAAIAAAAAAAAAAQAABrT+XgDeBZwAAAAAA7QAAQAAAAAAAAAAAAAAAAAAABMD9gAAAAAAAAKqAAAB/AAAA/YAAAH8AAACzgAABZwAAALOAAAFnAAAAd4AAAFnAAAA7wAAAO8AAACzAAABHwAAAE8AAAEfAAABZwAAAAAECgQKBAoECggUCBQIFAgUCBQIFAgUCBQIFAgUCBQIFAgUCBQIFAABAAAAEwP+AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACgB+AAEAAAAAABMABQAAAAMAAQQJAAAAaAAFAAMAAQQJAAEACgBtAAMAAQQJAAIADgB3AAMAAQQJAAMADgCFAAMAAQQJAAQAGgCTAAMAAQQJAAUAVgCtAAMAAQQJAAYACgEDAAMAAQQJABMACgENAAMAAQQJAMgAbgEXUnVwZWUAVAB5AHAAZQBmAGEAYwBlACAAqQAgACgAeQBvAHUAcgAgAGMAbwBtAHAAYQBuAHkAKQAuACAAMgAwADEAMAAuACAAQQBsAGwAIABSAGkAZwBoAHQAcwAgAFIAZQBzAGUAcgB2AGUAZABSAHUAcABlAGUAUgBlAGcAdQBsAGEAcgB3AGUAYgBmAG8AbgB0AFIAdQBwAGUAZQAgAFIAZQBnAHUAbABhAHIAVgBlAHIAcwBpAG8AbgAgADEALgAwADAAIABKAHUAbAB5ACAAMQA1ACwAIAAyADAAMQAwACwAIABpAG4AaQB0AGkAYQBsACAAcgBlAGwAZQBhAHMAZQBSAHUAcABlAGUAUgB1AHAAZQBlAFQAaABpAHMAIABmAG8AbgB0ACAAdwBhAHMAIABnAGUAbgBlAHIAYQB0AGUAZAAgAGIAeQAgAHQAaABlACAARgBvAG4AdAAgAFMAcQB1AGkAcgByAGUAbAAgAEcAZQBuAGUAcgBhAHQAbwByAC4AAAIAAAAAAAD/JwCWAAAAAAAAAAAAAAAAAAAAAAAAAAAAEwAAAAEAAgADADUBAgEDAQQBBQEGAQcBCAEJAQoBCwEMAQ0BDgEPB3VuaTAwQTAHdW5pMjAwMAd1bmkyMDAxB3VuaTIwMDIHdW5pMjAwMwd1bmkyMDA0B3VuaTIwMDUHdW5pMjAwNgd1bmkyMDA3B3VuaTIwMDgHdW5pMjAwOQd1bmkyMDBBB3VuaTIwMkYHdW5pMjA1Rg==) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.mdi-rupee-symbol:before {
+  font-family: rupee;
+  content: "R";
+}
+
+.padding-10 {
+  margin: 10px !important;
+}
+
+.full-width {
+  width: 98% !important;
+}
+
+.offer-card li {
+  text-align: center !important;
+}
+
+.row-filter {
+  padding: 10px !important;
+}
+
+@media only screen and (max-width: 500px) {
+
+  .margin-10 {
+    padding: 10px !important;
+  }
+
+  .header-line-height {
+    line-height: 40px !important;
+  }
+
+}
+
+.doughnut-chart-header {
+  position: relative !important;
+  font-weight: 500 !important;
+  text-align: center !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  font-size: 14px !important;
+  top: auto !important;
+}
+
+.li-chart-legend {
+  margin-bottom: 0px !important;
+}
+
+.col-padding-0 {
+  padding: 0px !important;
+}
+
+.chart-title {
+  font-size: 16px !important;
+}
+
+.badge-notification {
+  color: #ff4081 !important;
+  background-color: white !important;
+}
+
+.card-action-click {
+  background-color: #f9f9f9 !important;
+}
+
+.dashboard-doughnut {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: auto !important;
+  height: auto !important;
+}
+
+@media only screen and (min-device-width: 800px) {
+  .card-notification {
+    min-height: 375px !important;
+    max-height: 375px !important;
+    overflow-y: auto !important;
+  }
+
+  .table-transactions {
+    max-height: 455px !important;
+    min-height: 455px !important;
+    overflow-y: auto !important;
+  }
+
+  .table-transactions-no-pager {
+    max-height: 515px !important;
+    min-height: 515px !important;
+    overflow-y: auto !important;
+  }
+
+  .card-pending-approval {
+    max-height: 99px !important;
+    min-height: 99px !important;
+  }
+
+  .card-pending-approval > h4 {
+    line-height: 4.2rem !important;
+  }
+
+  .profile-same-height {
+    min-height: 555px !important;
+  }
+
+  .payment-card {
+    min-height: 600px;
+    max-height: 600px;
+  }
+
+  .table-overflow-y-500 {
+    max-height: 500px !important;
+    overflow-y: auto !important;
+  }
+
+  .referral-card {
+    min-height: 625px !important;
+    max-height: 625px !important;
+  }
+
+  .row-filter {
+    padding: 10px !important;
+    position: fixed !important;
+    z-index: 100 !important;
+    background-color: white !important;
+    width: 100% !important;
+    margin-left: -1.5rem !important;
+  }
+
+  .div-offer-list {
+    padding-top: 75px !important;
+    min-height: 600px !important;
+  }
+
+  .brand-logo img {
+    margin-top: 6px !important;
+  }
+
+  .btn-reset-password {
+    max-width: 50% !important;
+  }
+
+  .slides {
+    height: 400px !important;
+  }
+
+  .slider {
+    height: 430px !important;
+  }
+
+  .slider-card {
+    min-height: 450px !important;
+    max-height: 450px !important;
+  }
+
+}
+
+@media only screen and (max-device-width: 600px) and (min-device-width: 320px) {
+
+  .card-notification {
+    max-height: 375px !important;
+    overflow-y: auto !important;
+  }
+
+  table.responsive-table th {
+    min-height: 3.25em !important;
+    padding: 15px 5px !important;
+  }
+
+  .div-offer-list {
+    min-height: 600px !important;
+  }
+
+  .rightside-navigation {
+    width: 100% !important;
+  }
+
+  .loginBtn {
+    font-size: 12px !important;
+  }
+
+  .slider-img {
+    display: inline-block !important;
+    width: 100% !important;
+    font-size: 0 !important;
+    line-height: 0 !important;
+    vertical-align: middle !important;
+    background-size: 100% 100% !important;
+    background-position: 0% 0% !important;
+    background-repeat: no-repeat !important;
+  }
+
+  .slider {
+    height: 220px !important;
+  }
+
+  .slides {
+    height: 170px !important;
+  }
+
+  .caption-title {
+    font-size: 1em !important;
+  }
+
+  .caption-description {
+    font-size: 0.75em !important;
+  }
+
+  .slider-btn {
+    padding: 4px !important;
+    color: #434a54 !important;
+    font-size: 10px !important;
+    height: 25px !important;
+    line-height: 20px !important;
+  }
+
+  .caption {
+    margin-bottom: 10px !important;
+    padding: 4px !important;
+  }
+
+  .slider-card {
+    min-height: 220px !important;
+    max-height: 220px !important;
+  }
+
+  .index-banner {
+    background: linear-gradient(135deg, #233241 0, #1f3760 100%) !important;
+    background-size: 100% !important;
+    position: relative !important;
+    margin-top: -1px !important;
+  }
+}
+
+.btn-small {
+  height: 22px !important;
+  width: 50px !important;
+  font-size: 12px !important;
+  padding: 0px !important;
+  line-height: 22px !important;
+}
+
+.row-cashback-rate {
+  line-height: 2.5;
+  margin-bottom: 0;
+}
+
+.col-cashback-rate {
+  border-left: 1px !important;
+  border-left-color: #e0e0e0 !important;
+  border-left-style: solid !important;
+}
+
+.tabs .indicator {
+  height: 10% !important;
+  background-color: cyan !important;
+}
+
+.slider .indicators .indicator-item.active {
+  background-color: orange !important;
+}
+
+#modal-coupon-code {
+  z-index: 10000 !important;
+}
+
+.stitched {
+  padding: 10px;
+  margin: 10px;
+  background: darkturquoise;
+  color: #fff;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1.3em;
+  border: 2px dashed #fff;
+  border-radius: 10px;
+  text-shadow: -1px -1px #aa3030;
+  font-weight: normal;
+}
+
+.padding-top-10 {
+  padding-top: 10px !important;
+}
+
+.user-profile-content {
+  padding: 0px !important;
+}
+
+.user-profile-content > ul {
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.rate-text {
+  font-size: 25px !important;
+  font-weight: bold !important;
+}
+
+.btn-share-social {
+  margin: 2px !important;
+  width: 90% !important;
+}
+
+.card-height {
+  max-height: 450px !important;
+  min-height: 450px !important;
+}
+
+.col-content-padding-0 {
+  padding: 0px !important;
+}
+
+.input-field div.error {
+  position: relative;
+  top: -1rem;
+  left: 2.8rem;
+  font-size: 0.8rem;
+  color: #FF600A;
+  -webkit-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  -o-transform: translateY(0%);
+  transform: translateY(0%);
+}
+
+/* highlight Input filed error */
+input.ng-invalid.ng-touched {
+  border-bottom: 1px solid #FF600A;
+  box-shadow: none;
+}
+
+.padding-left-45 {
+  padding-left: 45px !important;
+}
+
+.referral-card > .card-content > ul > li .row {
+  margin-bottom: 0px !important;
+}
+
+.referral-card > .card-content > ul > li > div > div {
+  margin-bottom: 10px !important;
+}
+
+.wordwrap {
+  word-wrap: break-word !important;
+}
+
+.th-90 {
+  width: 90% !important;
+}
+
+.td-90 {
+  width: 90% !important;
+}
+
+.coupon-code {
+  padding: 10px !important;
+  color: white !important;
+  font-weight: bold !important;
+}
+
+.coupon-desc {
+  color: gray !important;
+}
+
+.coupon-desc > ul {
+  padding: 20px !important;
+}
+
+.coupon-desc > ul li {
+  list-style-type: circle !important;
+}
+
+.font-size-12 {
+  font-size: 12px !important;
+}
+
+.fav-logo {
+  border-radius: 0px !important;
+}
+
+.paisaclub-name-small {
+  font-weight: bold !important;
+  color: darkslategrey !important;
+}
+
+.landing-coupon-card {
+  min-height: 200px !important;
+}
+
+.landing-coupon-code {
+  font-weight: bold !important;
+  color: coral !important;
+}
+
+.landing-coupon-card .coupon-details {
+  padding-top: 10px !important;
+}
+
+.landing-offer-card .cashback-detail {
+  padding-top: 10px !important;
+}
+
+.dashboard-card-content {
+  display: table;
+  width: 100%;
+  min-height: 80px !important;
+}
+
+.dashboard-card {
+  min-height: 80px !important;
+}
+
+.dashboard-card:hover {
+  cursor: pointer !important;
+}
+
+.dashboard-card .card-content {
+  padding: 0px !important;
+}
+
+.dashboard-card-content span {
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.dashboard-card-content i {
+  vertical-align: middle;
+  display: table-cell;
+  font-size: 50px !important;
+  padding: 25px !important;
+}
+
+.slim-progress-bar {
+  margin: 0px 0px 0px 0px !important;
+  height: 4px !important;
+  z-index: 9999 !important;
+  position: fixed !important;
+}
+
+.slider .indicators {
+  bottom: 50px !important;
+  z-index: 9 !important;
+}
+
+.slider .indicators .indicator-item {
+  height: 10px !important;
+  width: 10px !important;
+}
+
+.padding-BT-25 {
+  padding-top: 25px !important;
+  padding-bottom: 25px !important;
+}
+
+.full-width-100 {
+  width: 100% !important;
+}
+
+.flex-overlay-slider {
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  border-radius: 30px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  z-index: 99;
+  top: 0;
+  width: 213px;
+  right: 0px;
+}
+
+.primary-color {
+  background: #4fd2c2;
+}
+
+.notifications-bg {
+  background-image: url('../images/user-bg-simple.jpg');
+  color: #fafafa;
+  margin-bottom: 0px !important;
+}
+
+.transparent-div {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+  padding: 15px;
+}
+
+.icon-bell {
+  -webkit-animation: ring 6s 1s ease-in-out infinite;
+  -webkit-transform-origin: 50% 4px;
+  -moz-animation: ring 6s 1s ease-in-out infinite;
+  -moz-transform-origin: 50% 4px;
+  animation: ring 6s 1s ease-in-out infinite;
+  transform-origin: 50% 4px;
+}
+
+.slider-btn {
+  background-color: #fff;
+  padding: 5px 30px;
+  color: #434a54;
+  font-size: 20px;
+  height: auto;
+}
+
+.slider-btn:hover {
+  color: white !important;
+}
+
+.line {
+  background-color: #fff;
+  display: block;
+  height: 3px;
+  width: 200px;
+}
+
+.social-media-count {
+  min-width: 60px;
+  max-width: 60px;
+  border-radius: 5px;
+  padding: 2px;
+  font-size: 13px;
+  color: white;
+  padding: 2px 8px;
+}
+
+.row-no-margin-bottom {
+  margin-bottom: 0px;
+}
+
+.padding-5 {
+  padding: 5px !important;
+}
+
+.glyph {
+  display: inline-block;
+  width: 9em;
+  margin: 1em;
+  text-align: center;
+  vertical-align: top;
+  background: #FFF;
+}
+
+.glyph svg.icon {
+  width: 90px;
+}
+
+#glyphs {
+  border-bottom: 1px solid #ccc;
+  padding: 2em 0;
+  text-align: center;
+}
+
+.heading-icons {
+  font-size: 0.75em;
+  background-color: #222;
+  color: #fff;
+  border-radius: 4px;
+  padding: 0.5em;
+  color: #FFFF99;
+  font-family: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.margin-top-12 {
+  margin-top: 12px !important;
+}
+
+.btn-paisaclub-loader {
+  background-color: #00bfa5 !important;
+  color: #fff !important;
+}
+
+.btn-paisaclub-loader > .ladda-label {
+  top: -12px;
+}
+
+.font-size-14 {
+  font-size: 14px !important;
+}
+
+.side-nav {
+  max-width: 250px !important;
+}
+
+.margin-top-10 {
+  margin-top: 10px !important;
+}
+
+.payment-card div.error {
+  top: -10px !important;
+}
+
+//to fix error in payment page
+.modal-overlay {
+  // background-color: #8DB654 !important;
+  background: linear-gradient(159deg, rgb(53, 97, 191) -26%, rgb(0, 168, 203) 79%) !important;
+  opacity: 0.95 !important;
+  z-index: 996 !important;
+}
+
+.closebtn {
+  cursor: pointer;
+  margin: 5px;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+}
+
+.closebtn:hover {
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.chip .mdi-navigation-close {
+  font-size: 10px !important;
+}
+
+.login-divider {
+  margin-left: -25px !important;
+  margin-right: -25px !important;
+  background-color: lightslategray !important;
+}
+
+.div-noscroll {
+  overflow: hidden !important;
+}
+
+.payment-screen > .btn-small {
+  width: 100px !important;
+}
+
+.banner {
+  padding: 50px;
+  min-height: 150px;
+  color: #FFFFFF;
+  font-size: 32px;
+  font-family: Roboto Condensed, arial, sans-serif;
+  line-height: 1;
+  font-weight: 700;
+  background: linear-gradient(159deg, #3562AA -26%, #00A9B1 79%);
+  text-align: center;
+}
+
+section.bg-banner {
+  padding: 50px;
+  min-height: 150px;
+  background: linear-gradient(159deg, #3562AA -26%, #00A9B1 79%);
+}
+
+.margin-LR-10 {
+  margin: 0px 10px 0px !important;
+}
+
+.offer-image:hover {
+  transform: scale(1.2, 1) !important;
+  transition: all 200ms ease-in !important;
+}
+
+.modal {
+  max-height: 90% !important;
+}
+
+.margin-bottom-20 {
+  margin-bottom: 20px !important;
+}
+
+.bg-offer-image {
+  background-color: white !important;
+  padding: 20px 12px !important;
+}
+
+.slider .slides li img {
+  background-size: 100% 100% !important;
+}
